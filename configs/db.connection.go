@@ -25,5 +25,12 @@ func ConnectToDb() (*gorm.DB, error) {
 		configDB    = fmt.Sprintf(
 			"%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local", db_username, db_password, db_host, db_port, db_name)
 	)
-	return gorm.Open(db_type, configDB)
+	db, errDb := gorm.Open(db_type, configDB)
+	db.SingularTable(true)
+	db.LogMode(true)
+	// db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(
+	// 	&m.User{},
+	// 	&m.Permission{},
+	// )
+	return db, errDb
 }

@@ -1,4 +1,4 @@
-package migrations
+package main
 
 import (
 	"time"
@@ -6,6 +6,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
 	"github.com/rafly7/backend/configs"
+	// . "github.com/rafly7/backend/models"
 )
 
 type Base struct {
@@ -36,6 +37,8 @@ type User struct {
 	Name     string `gorm:"column:name;type:varchar(32);not null"`
 	Email    string `gorm:"column:email;type:varchar(32);not null"`
 	Password string `gorm:"column:password;type:varchar(128);not null"`
+	// PermissionId Permission `gorm:"foreignkey:permissionId;association_foreignkey:permission(id);column:permissionId"`
+	PermissionId Permission `gorm:"association_foreignkey:id"`
 }
 
 type Users []User
@@ -52,10 +55,16 @@ var (
 	}
 )
 
-func RunMigrations(db *gorm.DB) {
-	db.DropTableIfExists(User{})
-	db.AutoMigrate(User{})
-	Migrate(db, users, permissions)
+func main() {
+	db, err := configs.ConnectToDb()
+	if err != nil {
+		panic(err.Error())
+	}
+	db.DropTableIfExists(User{}, Permission{})
+	db.AutoMigrate(User{}, Permission{})
+	db.Model(&User{}).Related(&Permission{}, "PermissionId")
+	//db.Model(&User{}).AddForeignKey("permission_id", "permission(id)", "RESTRICT", "RESTRICT")
+	// Migrate(db, users, permissions)
 }
 
 func Migrate(db *gorm.DB, models ...interface{}) {

@@ -9,26 +9,26 @@ import (
 )
 
 func (c *Connection) GetAllUser(u *models.Users) *models.Users {
-	c.Db.Find(&u)
+	if exists := c.Db.Find(&u).RecordNotFound(); exists {
+		return nil
+	}
 	return u
 }
 
 func (c *Connection) GetUserById(id string, u *models.User) *models.User {
-	exists := c.Db.Where("id=?", id).First(&u).RecordNotFound()
-	if exists {
+	if c.Db.Where("id=?", id).First(&u).RecordNotFound() {
 		return nil
 	}
 	return u
-	// var exists bool = c.Db.Where("id=?", id).First(&u).RecordNotFound()
-	// if exists {
-	// 	return u, exists
-	// } else {
-	// 	return u, exists
-	// }
 }
 
 func (c *Connection) AddUser(payload []byte, u *models.User) *models.User {
-	json.Unmarshal(payload, &u)
+	if err := json.Unmarshal(payload, &u); err != nil {
+		return nil
+	}
+	if len(u.Name) < 3 || len(u.Email) < 6 || len(u.Password) < 6 {
+		return nil
+	}
 	*u = models.User{Name: u.Name, Email: u.Email, Password: configs.HashPassword(u.Password)}
 	c.Db.NewRecord(*u)
 	c.Db.Create(&u)
@@ -38,16 +38,22 @@ func (c *Connection) AddUser(payload []byte, u *models.User) *models.User {
 }
 
 func (c *Connection) UpdateUser(payload []byte, u *models.User) *models.User {
-	json.Unmarshal(payload, &u)
+	if err := json.Unmarshal(payload, &u); err != nil {
+		return nil
+	}
+	if len(u.Name) < 3 || len(u.Email) < 6 || len(u.Password) < 6 {
+		return nil
+	}
 	c.Db.First(&u, u.Id)
 	*&u.Name = u.Name
 	*&u.Email = u.Email
+	fmt.Println(u.Password)
 	*&u.Password = configs.HashPassword(u.Password)
 	c.Db.Save(&u)
 	return u
 }
 
-func (c *Connection) DeleteUser(id string, u *models.User) *models.User {
-	c.Db.Where("id=?", id).Delete(&u)
-	return u
+func (c *Connection) DeleteUser(id string, u *models.User) int64 {
+	// c.Db.Where("id=?", id).Delete(&u).RowsAffected
+	return c.Db.Where("id=?", id).Delete(&u).RowsAffected
 }

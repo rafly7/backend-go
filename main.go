@@ -5,7 +5,6 @@ import (
 
 	"github.com/kataras/iris/v12"
 	"github.com/rafly7/backend/configs"
-	m "github.com/rafly7/backend/models"
 	"github.com/rafly7/backend/servers"
 )
 
@@ -50,15 +49,9 @@ func main() {
 		panic("failed to connect database")
 	}
 	defer db.Close()
-	db.SingularTable(true)
-	db.LogMode(true)
-	db.Set("gorm:table_options", "ENGINE=InnoDB")
 	address, level := configs.ConfigServer()
-	db.AutoMigrate(
-		&m.User{},
-		&m.Permission{},
-	)
-	app := servers.Server(level, db)
+	app, f := servers.Server(level, db)
+	defer f.Close()
 	app.Run(
 		iris.Addr(address),
 		iris.WithoutServerError(iris.ErrServerClosed),

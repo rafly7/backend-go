@@ -1,7 +1,11 @@
 package main
 
 import (
+	"log"
+	"os"
 	"time"
+
+	_runtime "runtime/pprof"
 
 	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
@@ -28,17 +32,18 @@ func (base *Base) BeforeCreate(scope *gorm.Scope) error {
 type Permission struct {
 	Base
 	PermissionName string `gorm:"type:varchar(8);not null"`
+	// Users          Users  `gorm:"ForeignKey:PermissionId" json:"Users"`
 }
 
 type Permissions []Permission
 
 type User struct {
 	Base
-	Name     string `gorm:"column:name;type:varchar(32);not null"`
-	Email    string `gorm:"column:email;type:varchar(32);not null"`
-	Password string `gorm:"column:password;type:varchar(128);not null"`
-	// PermissionId Permission `gorm:"foreignkey:permissionId;association_foreignkey:permission(id);column:permissionId"`
-	PermissionId Permission `gorm:"association_foreignkey:id"`
+	Name         string     `gorm:"column:name;type:varchar(32);not null"`
+	Email        string     `gorm:"column:email;type:varchar(32);not null"`
+	Password     string     `gorm:"column:password;type:varchar(128);not null"`
+	PermissionId *uuid.UUID `gorm:"type:varchar(36)" json:"permission_Id"`
+	// Permission   Permission `json:"permission"`
 }
 
 type Users []User
@@ -53,18 +58,29 @@ var (
 		Permission{PermissionName: "admin"},
 		Permission{PermissionName: "user"},
 	}
+	cpuProfile = "cpu.prof"
 )
 
-func main() {
+func mains() {
+	cpuProf, errc := os.Create(cpuProfile)
+	_runtime.StartCPUProfile(cpuProf)
 	db, err := configs.ConnectToDb()
 	if err != nil {
 		panic(err.Error())
 	}
+	if errc != nil {
+		log.Fatal(errc.Error())
+	}
+	defer cpuProf.Close()
+	defer _runtime.StopCPUProfile()
+	db.SingularTable(true)
 	db.DropTableIfExists(User{}, Permission{})
-	db.AutoMigrate(User{}, Permission{})
-	db.Model(&User{}).Related(&Permission{}, "PermissionId")
-	//db.Model(&User{}).AddForeignKey("permission_id", "permission(id)", "RESTRICT", "RESTRICT")
-	// Migrate(db, users, permissions)
+	db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(
+		&User{},
+		&Permission{},
+	)
+	// db.Model(&User{}).AddForeignKey("permission_id", "permissions(id)", "RESTRICT", "RESTRICT")
+	Migrate(db, users, permissions)
 }
 
 func Migrate(db *gorm.DB, models ...interface{}) {

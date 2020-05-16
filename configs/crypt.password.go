@@ -1,6 +1,7 @@
 package configs
 
 import (
+	"github.com/kataras/iris/v12"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -8,7 +9,7 @@ func HashPassword(plaintext string) string {
 	byteText := []byte(plaintext)
 	hash, err := bcrypt.GenerateFromPassword(byteText, bcrypt.MinCost)
 	if err != nil {
-		panic(err.Error())
+		iris.New().Logger().Errorf("Error Hash Password: %s", err.Error())
 	}
 	return string(hash)
 }

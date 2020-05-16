@@ -4,6 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/kataras/iris/v12"
 	ctr "github.com/rafly7/backend/controllers"
+	"github.com/rafly7/backend/middlewares"
 	. "github.com/rafly7/backend/models"
 	. "github.com/rafly7/backend/services"
 )
@@ -13,6 +14,7 @@ func UserRoutes(router iris.Party, db *gorm.DB) {
 	// users := &models.Users{}
 	// fmt.Println(users)
 	// ctx.JSON(ss.GetAllUser(users))
+	router.Use(middlewares.JwtHandler().Serve)
 	router.Get("/", func(ctx iris.Context) { ctr.GetUser(ctx, Connection{Db: db}, &User{}, &Users{}) })
 	router.Post("/", func(ctx iris.Context) { ctr.AddUser(ctx, Connection{Db: db}, &User{}) })
 	router.Put("/", func(ctx iris.Context) { ctr.UpdateUser(ctx, Connection{Db: db}, &User{}) })

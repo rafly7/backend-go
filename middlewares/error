@@ -1,0 +1,1429 @@
+[Info  - 8:42:23 AM] 2020/05/16 08:42:23 
+	message="Build info\n----------\ngolang.org/x/tools/gopls 0.4.1\n    golang.org/x/tools/gopls@v0.4.1-pre1 h1:w6e4AmFe6sDSVrgaRkf4WqLyVAlByUrr9QM5xH7z1e4=\n    github.com/BurntSushi/toml@v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=\n    github.com/sergi/go-diff@v1.1.0 h1:we8PVUC3FE2uYfodKH/nBHMSetSfHDR6scGdBi+erh0=\n    golang.org/x/mod@v0.2.0 h1:KU7oHjnv3XNWfa5COkzUifxZmxp1TyI7ImMXqFxLwvQ=\n    golang.org/x/sync@v0.0.0-20190911185100-cd5d95a43a6e h1:vcxGaoTs7kV8m5Np9uUNQin4BrLOthgV7252N8V+FwY=\n    golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a h1:hyATTnDVgvh1+kLv8pyC+Tle73q1UsJ54gDVyXSElVw=\n    golang.org/x/xerrors@v0.0.0-20191204190536-9bdfabe68543 h1:E7g+9GITq07hpfrRu66IVDexMakfv52eLZ2CXBWiKr4=\n    honnef.co/go/tools@v0.0.1-2020.1.3 h1:sXmLre5bzIR6ypkjXCDI3jHPssRhc8KD/Ome589sc3U=\n    mvdan.cc/xurls/v2@v2.1.0 h1:KaMb5GLhlcSX+e+qhbRJODnUUBvlw01jt4yrjFIHAuA=\n\nGo info\n-------\ngo version go1.14.2 linux/amd64\n\n"
+[Info  - 8:42:24 AM] 2020/05/16 08:42:24 
+	message="go env for /home/rafly/vscode/Golang/backend-go\n(valid build configuration = true)\n(build flags: [-modfile=/tmp/go.backend-go.842824995.mod])\nGO111MODULE=\"\"\nGOARCH=\"amd64\"\nGOBIN=\"\"\nGOCACHE=\"/home/rafly/.cache/go-build\"\nGOENV=\"/home/rafly/.config/go/env\"\nGOEXE=\"\"\nGOFLAGS=\"\"\nGOHOSTARCH=\"amd64\"\nGOHOSTOS=\"linux\"\nGOINSECURE=\"\"\nGONOPROXY=\"\"\nGONOSUMDB=\"\"\nGOOS=\"linux\"\nGOPATH=\"/home/rafly/go\"\nGOPRIVATE=\"\"\nGOPROXY=\"https://proxy.golang.org,direct\"\nGOROOT=\"/usr/lib/go-1.14\"\nGOSUMDB=\"sum.golang.org\"\nGOTMPDIR=\"\"\nGOTOOLDIR=\"/usr/lib/go-1.14/pkg/tool/linux_amd64\"\nGCCGO=\"gccgo\"\nAR=\"ar\"\nCC=\"gcc\"\nCXX=\"g++\"\nCGO_ENABLED=\"1\"\nGOMOD=\"/home/rafly/vscode/Golang/backend-go/go.mod\"\nCGO_CFLAGS=\"-g -O2\"\nCGO_CPPFLAGS=\"\"\nCGO_CXXFLAGS=\"-g -O2\"\nCGO_FFLAGS=\"-g -O2\"\nCGO_LDFLAGS=\"-g -O2\"\nPKG_CONFIG=\"pkg-config\"\nGOGCCFLAGS=\"-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build211438037=/tmp/go-build -gno-record-gcc-switches\"\n"
+[Info  - 8:42:25 AM] 2020/05/16 08:42:25 
+	message="go/packages.Load"
+	snapshot=0
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[./... builtin]
+	packages=10
+[Info  - 8:42:59 AM] 2020/05/16 08:42:59 
+	message="background imports cache refresh starting"
+[Info  - 8:43:00 AM] 2020/05/16 08:43:00 
+	message="background refresh finished after 1.193754633s"
+[Info  - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="go/packages.Load"
+	snapshot=3
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Info  - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="go/packages.Load"
+	snapshot=3
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="go/packages.Load"
+	snapshot=3
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go]
+[Info  - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="go/packages.Load"
+	snapshot=3
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:40:32 AM] 2020/05/16 09:40:32 
+	message="go/packages.Load"
+	snapshot=3
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Info  - 9:40:33 AM] 2020/05/16 09:40:33 
+	message="go/packages.Load"
+	snapshot=3
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:33 AM] 2020/05/16 09:40:33 
+	message="DocumentSymbols failed"
+	error=getting file for DocumentSymbols: no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:40:33 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Error - 9:40:33 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Info  - 9:40:33 AM] 2020/05/16 09:40:33 
+	message="go/packages.Load"
+	snapshot=3
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Info  - 9:40:33 AM] 2020/05/16 09:40:33 
+	message="go/packages.Load"
+	snapshot=3
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:36 AM] 2020/05/16 09:40:36 
+	message="no completions found"
+	error=getting file for Completion: no PackageHandles
+	position={0 2}
+[Info  - 9:40:36 AM] 2020/05/16 09:40:36 
+	message="go/packages.Load"
+	snapshot=5
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:36 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:1: expected 'package', found packa (and 2 more errors))
+  Code: 0 
+[Error - 9:40:36 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:1: expected 'package', found packa (and 2 more errors))
+  Code: 0 
+[Info  - 9:40:36 AM] 2020/05/16 09:40:36 
+	message="go/packages.Load"
+	snapshot=8
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:36 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:1: expected 'package', found packa (and 2 more errors))
+  Code: 0 
+[Error - 9:40:36 AM] 2020/05/16 09:40:36 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Info  - 9:40:36 AM] 2020/05/16 09:40:36 
+	message="go/packages.Load"
+	snapshot=8
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Info  - 9:40:37 AM] 2020/05/16 09:40:37 
+	message="go/packages.Load"
+	snapshot=9
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:37 AM] 2020/05/16 09:40:37 
+	message="no completions found"
+	error=getting file for Completion: no PackageHandles
+	position={0 6}
+[Info  - 9:40:37 AM] 2020/05/16 09:40:37 
+	message="go/packages.Load"
+	snapshot=9
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:37 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:37 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:37 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Info  - 9:40:37 AM] 2020/05/16 09:40:37 
+	message="go/packages.Load"
+	snapshot=10
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Info  - 9:40:38 AM] 2020/05/16 09:40:38 
+	message="go/packages.Load"
+	snapshot=10
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:38 AM] 2020/05/16 09:40:38 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:40:38 AM] 2020/05/16 09:40:38 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:40:39 AM] 2020/05/16 09:40:39 
+	message="go/packages.Load"
+	snapshot=11
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Info  - 9:40:40 AM] 2020/05/16 09:40:40 
+	message="go/packages.Load"
+	snapshot=11
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:40 AM] 2020/05/16 09:40:40 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Info  - 9:40:41 AM] 2020/05/16 09:40:41 
+	message="go/packages.Load"
+	snapshot=11
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Error - 9:40:41 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:41 AM] 2020/05/16 09:40:41 
+	message="DocumentSymbols failed"
+	error=getting file for DocumentSymbols: no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:40:41 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:41 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:41 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:9: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:40:41 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/routes/auth.go (/home/rafly/vscode/Golang/backend-go/routes/auth.go:1:9: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Info  - 9:40:41 AM] 2020/05/16 09:40:41 
+	message="go/packages.Load"
+	snapshot=12
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=0
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Error - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=1
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=13
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Error - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="no completions found"
+	error=this is a definition
+	position={0 9}
+[Error - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=14
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=14
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=14
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="go/packages.Load"
+	snapshot=14
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Error - 9:40:42 AM] 2020/05/16 09:40:42 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="go/packages.Load"
+	snapshot=14
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="go/packages.Load"
+	snapshot=14
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=1
+[Error - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="go/packages.Load"
+	snapshot=15
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=1
+[Info  - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="go/packages.Load"
+	snapshot=15
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Error - 9:40:43 AM] 2020/05/16 09:40:43 
+	message="no completions found"
+	error=this is a definition
+	position={0 11}
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Error - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="go/packages.Load"
+	snapshot=18
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=1
+[Error - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:44 AM] 2020/05/16 09:40:44 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:45 AM] 2020/05/16 09:40:45 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:45 AM] 2020/05/16 09:40:45 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:45 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:3:1: expected declaration, found fun
+  Code: 0 
+[Error - 9:40:45 AM] 2020/05/16 09:40:45 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:46 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:3:10: expected 'IDENT', found '{' (and 4 more errors)
+  Code: 0 
+[Error - 9:40:47 AM] 2020/05/16 09:40:47 
+	message="DocumentSymbols failed"
+	error=invalid pos
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:40:48 AM] 2020/05/16 09:40:48 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:49 AM] 2020/05/16 09:40:49 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:50 AM] 2020/05/16 09:40:50 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:50 AM] 2020/05/16 09:40:50 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:51 AM] 2020/05/16 09:40:51 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:52 AM] 2020/05/16 09:40:52 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:52 AM] 2020/05/16 09:40:52 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:52 AM] 2020/05/16 09:40:52 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:52 AM] 2020/05/16 09:40:52 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:57 AM] 2020/05/16 09:40:57 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:40:57 AM] 2020/05/16 09:40:57 
+	message="no completions found"
+	error=this is a definition of func AuthRoutes()
+	position={2 15}
+[Error - 9:41:03 AM] 2020/05/16 09:41:03 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:41:38 AM] 2020/05/16 09:41:38 
+	message="background imports cache refresh starting"
+[Info  - 9:41:38 AM] 2020/05/16 09:41:38 
+	message="background refresh finished after 126.396448ms"
+[Error - 9:42:25 AM] 2020/05/16 09:42:25 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:42:37 AM] 2020/05/16 09:42:37 
+	message="background imports cache refresh starting"
+[Info  - 9:42:37 AM] 2020/05/16 09:42:37 
+	message="background refresh finished after 28.381996ms"
+[Error - 9:42:58 AM] 2020/05/16 09:42:58 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:42:58 AM] 2020/05/16 09:42:58 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:42:58 AM] 2020/05/16 09:42:58 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:42:59 AM] 2020/05/16 09:42:59 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:42:59 AM] 2020/05/16 09:42:59 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:42:59 AM] 2020/05/16 09:42:59 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:00 AM] 2020/05/16 09:43:00 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:00 AM] 2020/05/16 09:43:00 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:01 AM] 2020/05/16 09:43:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:01 AM] 2020/05/16 09:43:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:01 AM] 2020/05/16 09:43:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:02 AM] 2020/05/16 09:43:02 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:02 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:3:29: expected 'IDENT', found ')' (and 6 more errors)
+  Code: 0 
+[Error - 9:43:02 AM] 2020/05/16 09:43:02 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Error - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/routes/auth.go]
+	packages=1
+[Info  - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="go/packages.Load"
+	snapshot=53
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Error - 9:43:04 AM] 2020/05/16 09:43:04 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={4 33}
+[Error - 9:43:07 AM] 2020/05/16 09:43:07 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:08 AM] 2020/05/16 09:43:08 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={4 34}
+[Error - 9:43:08 AM] 2020/05/16 09:43:08 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:08 AM] 2020/05/16 09:43:08 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:08 AM] 2020/05/16 09:43:08 
+	message="no completions found"
+	error=this is a definition of var d invalid type
+	position={4 36}
+[Error - 9:43:08 AM] 2020/05/16 09:43:08 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:09 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:5:38: expected type, found ')' (and 6 more errors)
+  Code: 0 
+[Error - 9:43:09 AM] 2020/05/16 09:43:09 
+	message="DocumentSymbols failed"
+	error=invalid pos
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:43:09 AM] 2020/05/16 09:43:09 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:09 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:5:39: expected type, found ')' (and 6 more errors)
+  Code: 0 
+[Error - 9:43:09 AM] 2020/05/16 09:43:09 
+	message="DocumentSymbols failed"
+	error=invalid pos
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:43:15 AM] 2020/05/16 09:43:15 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:15 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:5:40: expected type, found ')'
+  Code: 0 
+[Error - 9:43:15 AM] 2020/05/16 09:43:15 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:16 AM] 2020/05/16 09:43:16 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:16 AM] 2020/05/16 09:43:16 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:43:17 AM] 2020/05/16 09:43:17 
+	message="background imports cache refresh starting"
+[Info  - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="background refresh finished after 115.690417ms"
+[Info  - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="go/packages.Load"
+	snapshot=64
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[github.com/rafly7/backend github.com/rafly7/backend/routes github.com/rafly7/backend/servers]
+	packages=3
+[Info  - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="go/packages.Load"
+	snapshot=64
+	package_path="github.com/rafly7/backend/routes"
+	files=[/home/rafly/vscode/Golang/backend-go/routes/index.go /home/rafly/vscode/Golang/backend-go/routes/permission.go /home/rafly/vscode/Golang/backend-go/routes/user.go /home/rafly/vscode/Golang/backend-go/routes/auth.go]
+[Info  - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="go/packages.Load"
+	snapshot=64
+	package_path="github.com/rafly7/backend/servers"
+	files=[/home/rafly/vscode/Golang/backend-go/servers/logger.go /home/rafly/vscode/Golang/backend-go/servers/server.go]
+[Info  - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="go/packages.Load"
+	snapshot=64
+	package_path="github.com/rafly7/backend"
+	files=[/home/rafly/vscode/Golang/backend-go/main.go /home/rafly/vscode/Golang/backend-go/migrations.go]
+[Error - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:18 AM] 2020/05/16 09:43:18 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={7 44}
+[Error - 9:43:18 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:8:45: expected 'IDENT', found ')' (and 6 more errors)
+  Code: 0 
+[Error - 9:43:18 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:8:45: expected 'IDENT', found ')' (and 6 more errors)
+  Code: 0 
+[Error - 9:43:19 AM] 2020/05/16 09:43:19 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:20 AM] 2020/05/16 09:43:20 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:20 AM] 2020/05/16 09:43:20 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={7 46}
+[Error - 9:43:25 AM] 2020/05/16 09:43:25 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:25 AM] 2020/05/16 09:43:25 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:26 AM] 2020/05/16 09:43:26 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:26 AM] 2020/05/16 09:43:26 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:26 AM] 2020/05/16 09:43:26 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:26 AM] 2020/05/16 09:43:26 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:28 AM] 2020/05/16 09:43:28 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:28 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:10:1: expected selector or type assertion, found '}' (and 2 more errors)
+  Code: 0 
+[Error - 9:43:29 AM] 2020/05/16 09:43:29 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:29 AM] 2020/05/16 09:43:29 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:29 AM] 2020/05/16 09:43:29 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:32 AM] 2020/05/16 09:43:32 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:33 AM] 2020/05/16 09:43:33 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:34 AM] 2020/05/16 09:43:34 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:43:37 AM] 2020/05/16 09:43:37 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={8 17}
+[Info  - 9:43:49 AM] 2020/05/16 09:43:49 
+	message="background imports cache refresh starting"
+[Info  - 9:43:49 AM] 2020/05/16 09:43:49 
+	message="background refresh finished after 50.289562ms"
+[Error - 9:44:01 AM] 2020/05/16 09:44:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:01 AM] 2020/05/16 09:44:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:01 AM] 2020/05/16 09:44:01 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:02 AM] 2020/05/16 09:44:02 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:02 AM] 2020/05/16 09:44:02 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:02 AM] 2020/05/16 09:44:02 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:02 AM] 2020/05/16 09:44:02 
+	message="no signature help"
+	error=no signature help within a function declaration
+	position={8 22}
+[Error - 9:44:03 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:9:23: expected '(', found ')' (and 7 more errors)
+  Code: 0 
+[Error - 9:44:03 AM] 2020/05/16 09:44:03 
+	message="DocumentSymbols failed"
+	error=invalid pos
+	URI=file:///home/rafly/vscode/Golang/backend-go/routes/auth.go
+[Error - 9:44:03 AM] 2020/05/16 09:44:03 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:03 AM] 2020/05/16 09:44:03 
+	message="no signature help"
+	error=no signature help within a function declaration
+	position={8 23}
+[Error - 9:44:04 AM] 2020/05/16 09:44:04 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:05 AM] 2020/05/16 09:44:05 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:05 AM] 2020/05/16 09:44:05 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:05 AM] 2020/05/16 09:44:05 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:06 AM] 2020/05/16 09:44:06 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:06 AM] 2020/05/16 09:44:06 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:06 AM] 2020/05/16 09:44:06 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:06 AM] 2020/05/16 09:44:06 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:07 AM] 2020/05/16 09:44:07 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:07 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/routes/auth.go:9:33: expected 'IDENT', found ')' (and 7 more errors)
+  Code: 0 
+[Error - 9:44:07 AM] 2020/05/16 09:44:07 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:07 AM] 2020/05/16 09:44:07 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:07 AM] 2020/05/16 09:44:07 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:08 AM] 2020/05/16 09:44:08 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:09 AM] 2020/05/16 09:44:09 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:09 AM] 2020/05/16 09:44:09 
+	message="no signature help"
+	error=no signature help within a function declaration
+	position={8 39}
+[Error - 9:44:11 AM] 2020/05/16 09:44:11 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:11 AM] 2020/05/16 09:44:11 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:12 AM] 2020/05/16 09:44:12 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:12 AM] 2020/05/16 09:44:12 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:44:13 AM] 2020/05/16 09:44:13 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:44:29 AM] 2020/05/16 09:44:29 
+	message="background imports cache refresh starting"
+[Info  - 9:44:29 AM] 2020/05/16 09:44:29 
+	message="background refresh finished after 77.563459ms"
+[Error - 9:51:28 AM] 2020/05/16 09:51:28 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:30 AM] 2020/05/16 09:51:30 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:30 AM] 2020/05/16 09:51:30 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:31 AM] 2020/05/16 09:51:31 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:32 AM] 2020/05/16 09:51:32 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:32 AM] 2020/05/16 09:51:32 
+	message="no signature help"
+	error=cannot find an enclosing function
+	position={11 7}
+[Error - 9:51:33 AM] 2020/05/16 09:51:33 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:35 AM] 2020/05/16 09:51:35 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Error - 9:51:36 AM] 2020/05/16 09:51:36 
+	message="unable to compute error positions"
+	error=no file for file:///home/rafly/vscode/Golang/backend-go/servers/server.go in package github.com/rafly7/backend/routes
+	package="github.com/rafly7/backend/routes"
+[Info  - 9:51:53 AM] 2020/05/16 09:51:53 
+	message="background imports cache refresh starting"
+[Info  - 9:51:53 AM] 2020/05/16 09:51:53 
+	message="background refresh finished after 51.620535ms"
+[Info  - 9:53:31 AM] 2020/05/16 09:53:31 
+	message="go/packages.Load"
+	snapshot=117
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Error - 9:53:31 AM] 2020/05/16 09:53:31 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Info  - 9:53:31 AM] 2020/05/16 09:53:31 
+	message="go/packages.Load"
+	snapshot=117
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Error - 9:53:32 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Error - 9:53:32 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Info  - 9:53:32 AM] 2020/05/16 09:53:32 
+	message="go/packages.Load"
+	snapshot=117
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Error - 9:53:32 AM] 2020/05/16 09:53:32 
+	message="DocumentSymbols failed"
+	error=getting file for DocumentSymbols: no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Info  - 9:53:33 AM] 2020/05/16 09:53:33 
+	message="go/packages.Load"
+	snapshot=117
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Info  - 9:53:36 AM] 2020/05/16 09:53:36 
+	message="go/packages.Load"
+	snapshot=118
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Info  - 9:53:37 AM] 2020/05/16 09:53:37 
+	message="go/packages.Load"
+	snapshot=118
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Error - 9:53:37 AM] 2020/05/16 09:53:37 
+	message="failed to compute document links"
+	error=no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Info  - 9:53:37 AM] 2020/05/16 09:53:37 
+	message="go/packages.Load"
+	snapshot=118
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Error - 9:53:37 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Error - 9:53:37 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected ';', found 'EOF' (and 2 more errors))
+  Code: 0 
+[Error - 9:53:37 AM] 2020/05/16 09:53:37 
+	message="DocumentSymbols failed"
+	error=getting file for DocumentSymbols: no PackageHandles
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Info  - 9:53:38 AM] 2020/05/16 09:53:38 
+	message="go/packages.Load"
+	snapshot=118
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=0
+[Info  - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="go/packages.Load"
+	snapshot=120
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="go/packages.Load"
+	snapshot=120
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="no completions found"
+	error=getting file for Completion: no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found pa (and 2 more errors))], list errors: []
+	position={0 2}
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found pac (and 2 more errors))], list errors: []
+	snapshot=121
+	package="command-line-arguments"
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found pack (and 2 more errors))], list errors: []
+	snapshot=122
+	package="command-line-arguments"
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="no completions found"
+	error=getting file for Completion: no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found pack (and 2 more errors))], list errors: []
+	position={0 4}
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found packa (and 2 more errors))], list errors: []
+	snapshot=123
+	package="command-line-arguments"
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="no completions found"
+	error=getting file for Completion: no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found packa (and 2 more errors))], list errors: []
+	position={0 5}
+[Error - 9:53:39 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found packa (and 2 more errors))
+  Code: 0 
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found packag (and 2 more errors))], list errors: []
+	snapshot=124
+	package="command-line-arguments"
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="no completions found"
+	error=getting file for Completion: no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:1: expected 'package', found packag (and 2 more errors))], list errors: []
+	position={0 6}
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))], list errors: []
+	snapshot=125
+	package="command-line-arguments"
+[Error - 9:53:39 AM] 2020/05/16 09:53:39 
+	message="no completions found"
+	error=getting file for Completion: no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))], list errors: []
+	position={0 7}
+[Error - 9:53:40 AM] 2020/05/16 09:53:40 
+	message="failed to compute document links"
+	error=successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Error - 9:53:40 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:53:40 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:53:40 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:8: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:53:40 AM] 2020/05/16 09:53:40 
+	message="warning: diagnose package"
+	error=no parsed files for package command-line-arguments, expected: [/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go], errors: [successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:9: expected ';', found 'EOF' (and 1 more errors))], list errors: []
+	snapshot=126
+	package="command-line-arguments"
+[Error - 9:53:41 AM] Request textDocument/foldingRange failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:9: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:53:41 AM] Request textDocument/codeLens failed.
+  Message: successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:9: expected ';', found 'EOF' (and 1 more errors))
+  Code: 0 
+[Error - 9:53:41 AM] 2020/05/16 09:53:41 
+	message="failed to compute document links"
+	error=successfully parsed but no token.File for file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go (/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:1:9: expected ';', found 'EOF' (and 1 more errors))
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=127
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=127
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="no completions found"
+	error=this is a definition
+	position={0 9}
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=127
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=127
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=128
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:42 AM] 2020/05/16 09:53:42 
+	message="go/packages.Load"
+	snapshot=128
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=129
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=129
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=129
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=129
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="no completions found"
+	error=this is a definition
+	position={0 11}
+[Error - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=130
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=130
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="no completions found"
+	error=this is a definition
+	position={0 12}
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=130
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:43 AM] 2020/05/16 09:53:43 
+	message="go/packages.Load"
+	snapshot=130
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="go/packages.Load"
+	snapshot=131
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="go/packages.Load"
+	snapshot=131
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="no completions found"
+	error=this is a definition
+	position={0 13}
+[Info  - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="go/packages.Load"
+	snapshot=131
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="go/packages.Load"
+	snapshot=131
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:44 AM] 2020/05/16 09:53:44 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=132
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=132
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=132
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=132
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="no completions found"
+	error=this is a definition
+	position={0 14}
+[Error - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=133
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=133
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=133
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=133
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="no completions found"
+	error=this is a definition
+	position={0 15}
+[Error - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=134
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=134
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=134
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="go/packages.Load"
+	snapshot=134
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:45 AM] 2020/05/16 09:53:45 
+	message="no completions found"
+	error=this is a definition
+	position={0 16}
+[Error - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=135
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=135
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=135
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=135
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="no completions found"
+	error=this is a definition
+	position={0 17}
+[Error - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=136
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=136
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=136
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="go/packages.Load"
+	snapshot=136
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="no completions found"
+	error=this is a definition
+	position={0 18}
+[Error - 9:53:46 AM] 2020/05/16 09:53:46 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Info  - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="go/packages.Load"
+	snapshot=137
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="go/packages.Load"
+	snapshot=137
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="no completions found"
+	error=this is a definition
+	position={0 19}
+[Info  - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="go/packages.Load"
+	snapshot=137
+	directory=/home/rafly/vscode/Golang/backend-go
+	query=[file=/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+	packages=1
+[Info  - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="go/packages.Load"
+	snapshot=137
+	package_path="command-line-arguments"
+	files=[/home/rafly/vscode/Golang/backend-go/middlewares/jwt.go]
+[Error - 9:53:47 AM] 2020/05/16 09:53:47 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Error - 9:53:48 AM] 2020/05/16 09:53:48 
+	message="warning: diagnose go.mod"
+	error=no parsed file for file:///home/rafly/vscode/Golang/backend-go/go.mod
+	directory=/home/rafly/vscode/Golang/backend-go
+[Error - 9:53:51 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:3:1: expected declaration, found fun
+  Code: 0 
+[Error - 9:53:53 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:3:10: expected 'IDENT', found '{' (and 4 more errors)
+  Code: 0 
+[Error - 9:53:54 AM] 2020/05/16 09:53:54 
+	message="DocumentSymbols failed"
+	error=invalid pos
+	URI=file:///home/rafly/vscode/Golang/backend-go/middlewares/jwt.go
+[Error - 9:54:04 AM] Request textDocument/codeAction failed.
+  Message: computing fix edits: /home/rafly/vscode/Golang/backend-go/middlewares/jwt.go:3:10: expected 'IDENT', found '{' (and 4 more errors)
+  Code: 0 
+[Info  - 9:54:05 AM] 2020/05/16 09:54:05 
+	message="background imports cache refresh starting"
+[Info  - 9:54:05 AM] 2020/05/16 09:54:05 
+	message="background refresh finished after 55.793155ms"
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x10 pc=0x7b9c8c]
+
+goroutine 21104 [running]:
+golang.org/x/tools/internal/lsp/source.findIdentifier(0xe432a0, 0xc002de2120, 0xe549e0, 0xc0001e84d0, 0xe535e0, 0xc00d484000, 0xc00d0d6600, 0xce0f68, 0xc0081b2260, 0xc0003a4a00, ...)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/source/identifier.go:106 +0x14cc
+golang.org/x/tools/internal/lsp/source.Identifier(0xe432a0, 0xc002de2120, 0xe549e0, 0xc0001e84d0, 0xe41ae0, 0xc00ae1b860, 0x0, 0x4026000000000000, 0x0, 0x0, ...)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/source/identifier.go:71 +0x3ca
+golang.org/x/tools/internal/lsp/source.Hover(0xe431e0, 0xc00825d1c0, 0xe549e0, 0xc0001e84d0, 0xe41ae0, 0xc00ae1b860, 0x0, 0x4026000000000000, 0x0, 0x0, ...)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/source/hover.go:49 +0xa2
+golang.org/x/tools/internal/lsp.(*Server).hover(0xc000209000, 0xe431e0, 0xc00825d1c0, 0xc002de20c0, 0x0, 0x0, 0xc00d33f080)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/hover.go:24 +0x21b
+golang.org/x/tools/internal/lsp.(*Server).Hover(0xc000209000, 0xe431e0, 0xc00825d1c0, 0xc002de20c0, 0xc002de20c0, 0x0, 0x0)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/server_gen.go:96 +0x49
+golang.org/x/tools/internal/lsp/protocol.ServerHandler.func1(0xe431e0, 0xc00825d1c0, 0xc002de2090, 0xe43420, 0xc00825d140, 0x0, 0x0)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/protocol/tsserver.go:253 +0x1407
+golang.org/x/tools/internal/lsp/lsprpc.handshaker.func1(0xe431e0, 0xc00825d1c0, 0xc002de2090, 0xe43420, 0xc00825d140, 0x0, 0x0)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/lsp/lsprpc/lsprpc.go:531 +0x551
+golang.org/x/tools/internal/jsonrpc2.MustReplyHandler.func1(0xe431e0, 0xc00825d1c0, 0xc00784c760, 0xe43420, 0xc00825d140, 0xd31b40, 0x0)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/jsonrpc2/handler.go:35 +0xd3
+golang.org/x/tools/internal/jsonrpc2.AsyncHandler.func1.2(0xc00cb652c0, 0xc002dfd6e0, 0xc00038ccd0, 0xe431e0, 0xc00825d1c0, 0xc00784c760, 0xe43420, 0xc00825d140)
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/jsonrpc2/handler.go:103 +0x86
+created by golang.org/x/tools/internal/jsonrpc2.AsyncHandler.func1
+	/home/rafly/go/pkg/mod/golang.org/x/tools@v0.0.0-20200507174705-50c062a2b64a/internal/jsonrpc2/handler.go:100 +0x171
+[Error - 9:54:28 AM] Connection to server got closed. Server will not be restarted.
+[Error - 9:54:28 AM] Request textDocument/hover failed.
+Error: Connection got disposed.
+	at Object.dispose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/main.js:904:25)
+	at Object.dispose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:74:35)
+	at LanguageClient.handleConnectionClosed (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:2309:42)
+	at LanguageClient.handleConnectionClosed (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/main.js:155:15)
+	at closeHandler (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:2296:18)
+	at CallbackList.invoke (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+	at Emitter.fire (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+	at closeHandler (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/main.js:240:26)
+	at CallbackList.invoke (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+	at Emitter.fire (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+	at StreamMessageWriter.fireClose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/messageWriter.js:39:27)
+	at Socket.<anonymous> (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/messageWriter.js:58:46)
+	at Socket.emit (events.js:203:13)
+	at Pipe.<anonymous> (net.js:588:12)
+[Error - 9:54:28 AM] Request textDocument/codeLens failed.
+Error: Connection got disposed.
+	at Object.dispose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/main.js:904:25)
+	at Object.dispose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:74:35)
+	at LanguageClient.handleConnectionClosed (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:2309:42)
+	at LanguageClient.handleConnectionClosed (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/main.js:155:15)
+	at closeHandler (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-languageclient/lib/client.js:2296:18)
+	at CallbackList.invoke (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+	at Emitter.fire (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+	at closeHandler (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/main.js:240:26)
+	at CallbackList.invoke (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:62:39)
+	at Emitter.fire (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/events.js:121:36)
+	at StreamMessageWriter.fireClose (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/messageWriter.js:39:27)
+	at Socket.<anonymous> (/home/rafly/.vscode/extensions/golang.go-nightly-2020.5.1309/node_modules/vscode-jsonrpc/lib/messageWriter.js:58:46)
+	at Socket.emit (events.js:203:13)
+	at Pipe.<anonymous> (net.js:588:12)

@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/kataras/iris/v12"
 	"github.com/rafly7/backend/configs"
 	"github.com/rafly7/backend/servers"
@@ -45,8 +43,7 @@ func main() {
 	// if runCommand.Parsed() {
 	db, err := configs.ConnectToDb()
 	if err != nil {
-		fmt.Println(err.Error())
-		panic("failed to connect database")
+		iris.New().Logger().Fatalf("Failed to open database: %s", err.Error)
 	}
 	defer db.Close()
 	address, level := configs.ConfigServer()
